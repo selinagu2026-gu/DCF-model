@@ -71,7 +71,7 @@ def _seed_assumption_state(data: CompanyData):
 # ---------------------------------------------------------------------
 with st.sidebar:
     st.header("Company")
-    ticker_input = st.text_input("Ticker", value=st.session_state.get("ticker_input", "DIS")).strip().upper()
+    ticker_input = st.text_input("Ticker", value=st.session_state.get("ticker_input", "MCD")).strip().upper()
     fetch_clicked = st.button("Fetch / Refresh Data", type="primary", use_container_width=True)
 
     if fetch_clicked:
